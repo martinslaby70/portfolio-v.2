@@ -1,0 +1,67 @@
+@import './assets/colors.scss';
+
+.dark {
+    background-color: $background-dark;
+    h1,h2,h3, li, p, li>a {
+        color: $foreground-dark ;
+    }
+    h1>span, h1>span>span{
+        color: $foreground-dark ;
+        opacity: .5 ;
+    }
+    .project, .skills-container>div {
+        border-color: $foreground-dark ;
+        opacity: .9 ;
+        .unavalible{
+            opacity: .6 ;
+        }
+    }
+
+    div, a{
+        border-color: $foreground-dark !important;
+    }
+
+    .buttons{
+        a:not(.switcher){
+            color: $foreground-dark ;
+            &:hover{
+                background-color: $foreground-dark ;
+                color: $background-dark ;
+            }
+        }
+        .switcher{
+            color: $background-dark ;
+            background-color: $foreground-dark;
+            &:hover{
+                background-color: $background-dark ;
+                color: $foreground-dark ;
+            }
+        }
+        p{
+            opacity: .15;
+        }
+    }
+
+    .summary>a{
+        background-color: $foreground-dark ;
+        color: $background-dark ;
+        &:hover{
+            color: $foreground-dark ;
+            background-color: $background-dark ;
+        }
+    }
+
+    p>span{
+        color: white;
+        font-weight: bold;
+        a{
+            font-weight: normal;
+            color: $foreground-dark;
+        }
+    }
+
+    svg{
+        color: rgba($foreground-dark, .5);
+    }
+
+}

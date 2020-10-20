@@ -1,0 +1,32 @@
+
+p{
+    text-align: justify;
+    span{
+        color: white;
+    }
+}
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    div{
+        h2{
+            font-size: 100%;
+            width: 100%;
+            padding: 10px 0 10px 20px;
+        }
+        ul{
+            list-style: none;
+            padding: 0 0 0 20px;
+            opacity: .8; 
+        }
+        width: 30%;
+        min-width: 200px;
+        padding: 10px;
+        border-left: 1px solid ;
+
+    }
+}

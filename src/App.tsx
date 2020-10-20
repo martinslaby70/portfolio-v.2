@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useEffect, useState } from 'react';
+import AboutMe from './components/aboutMe'
+import Menu from './components/menu';
+import Projects from './components/projects';
+import Slider from './components/3d/slider';
 
-function App() {
+
+import Contacts from './components/contact';
+import Skills from './components/skills';
+//context
+
+//scss
+import './scss/index.scss';
+
+
+const App = () => {
+  
+  const [action, setAction] = useState('');
+  const [theme, setTheme] = useState<string>(localStorage.getItem('theme') ? localStorage.getItem('theme')! : 'dark');
+
+  const toggleTheme = (event: React.MouseEvent) => {
+    event.preventDefault();
+    if (theme === 'dark') 
+      setTheme('light')
+    else
+      setTheme('dark')
+  }
+
+  useEffect(() => localStorage.setItem('theme', theme),[theme])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={theme} id="themer">
+      <div className='container'>
+          <div id="content" className="hidden">
+            <AboutMe setAction={setAction}/>
+            <Menu setAction={setAction} toggleTheme={toggleTheme} theme={theme}/>
+            <Projects setAction={setAction}/>
+            <Skills />
+            <Contacts />
+            
+          </div>
+          <Slider action={action}/>
+      </div>
     </div>
-  );
+  )
 }
-
 export default App;

@@ -1,0 +1,66 @@
+@import './assets/colors.scss';
+
+.light {
+    background-color: $background-light ;
+    h1,h2,h3, li, p, li>a {
+        color: $foreground-light ;
+    }
+    h1>span, h1>span>span{
+        color: $foreground-light ;
+        opacity: .7 ;
+    }
+    .project, .skills-container>div {
+        border-color: $foreground-light ;
+        opacity: .9 ;
+        .unavalible{
+            opacity: .6 ;
+        }
+    }
+
+    div, a{
+        border-color: $foreground-light !important;
+    }
+
+    .buttons{
+        a:not(.switcher){
+            color: $foreground-light ;
+            &:hover{
+                background-color: $foreground-light ;
+                color: $background-light ;
+            }
+        }
+        .switcher{
+            color: $background-light ;
+            background-color: $foreground-light;
+            &:hover{
+                background-color: $background-light ;
+                color: $foreground-light ;
+            }
+        }
+       p{
+            opacity: .4;
+       }
+    }
+
+    .summary>a{
+        background-color: $foreground-light ;
+        color: $background-light ;
+        &:hover{
+            color: $foreground-light ;
+            background-color: $background-light ;
+        }
+    }
+
+    p>span{
+        color: black;
+        font-weight: bold;
+        a{
+            font-weight: normal;
+            color: $foreground-light;
+        }
+    }
+
+    svg{
+        color: rgba($foreground-light, .8);
+    }
+}
