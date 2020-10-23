@@ -33,6 +33,6 @@ const Menu = ({setAction, toggleTheme, theme}: props) => {
             </div>
         </div>
     )
-}
+} 
 
 export default Menu;
