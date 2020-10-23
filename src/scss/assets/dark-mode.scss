@@ -64,4 +64,26 @@
         color: rgba($foreground-dark, .5);
     }
 
+    button{
+        color: $foreground-dark;
+        background-color: $background-dark;
+    }
+}
+
+@media only screen and (max-width: 1234px) {
+    .dark{
+        .buttons{
+            background-color: rgba($background-dark, .97);
+            
+            a:hover:not(.switcher){
+                background-color: $background-dark !important;
+                color: $foreground-dark !important;
+            }
+            .switcher, .switcher:hover{
+                transition-duration: .2s !important;
+                background-color: $foreground-dark !important;
+                color: $background-dark !important;
+            }
+        }
+    }
 }

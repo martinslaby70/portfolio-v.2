@@ -11,6 +11,10 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+#themer{
+    min-height: 100vh;
+    min-width: 100vw;
+}
 .dark, .light {
     transition: all ease .1s;
 }
@@ -46,7 +50,9 @@ body{
         }
     }
 }
-
+.openbtn, .closebtn {
+    display: none;
+}
 .buttons{
     position: fixed;
     top: 30vh;
@@ -69,9 +75,10 @@ body{
 
         padding: 10px 0 10px 0;
         margin: 5px 0 5px 0;
-        transition: all ease-in-out .3s;
-       
-        &:nth-child(1){
+        transition: color ease-in-out .3s;
+        transition: background-color ease-in-out .3s;
+        
+        &:nth-child(2){
             margin-top: 80px;
         }
         &.switcher{
@@ -112,54 +119,159 @@ h1{
 
 .tooltip {
     position: relative;
-    display: block; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 170px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 3;
-    top: 100%;
-    left: 50%;
-    margin-left: -85px;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+    display: block;
 
-/* width */
+    .tooltiptext {
+        visibility: hidden;
+        width: 170px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+       
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 3;
+        top: 100%;
+        left: 50%;
+        margin-left: -85px;
+    }
+
+    &:hover .tooltiptext{
+        visibility: visible;
+    }
+}
+  
+
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background:  #393a43;
-  }
+::-webkit-scrollbar-track {
+background:  #393a43;
+}
    
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: grey; 
-  }
+::-webkit-scrollbar-thumb {
+background: grey; 
+}
   
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-@media only screen and (max-height: 900px) {
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+@media only screen and (max-width: 1234px) {
+    .container{
+        width: 80%;
+        margin-left: 10%;
+
+        .section{
+            width: 90%;
+            padding: 5%;
+        }
+    }
+
+    .slider{
+        transition: none !important;
+        opacity: .9 !important;
+        width: 50vw;
+        height: 50vw;
+        top: 25vh;
+        left: 25vw !important;
+        transition: opacity 2s ease !important;
+        &.right{
+            opacity: .1 !important;
+        }
+    }
+
+    .buttons{
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 40px;
+        align-items: flex-start;       
+        flex-direction: row;
+
+        a{
+            margin: 0 !important;
+            border-left: 0px;
+            border-bottom: 2px solid;
+            &.switcher{
+                border-top: 0px;
+            }
+        }
+        p{
+            display: none;
+        }
+    }  
 
 }
-@media only screen and (max-width: 900px) {
-   
+@media only screen and (max-width: 900px){
+    .buttons{
+        a{
+            font-size: 13px;
+        }
+    }
+}
+@media only screen and (max-width: 670px){
+    .openbtn, .closebtn { display: block;}
+    .openbtn{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        border: 0;
+        width: 40px;
+        
+        svg{
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+    .closebtn{
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+    .buttons{
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+        align-items: center;
+        flex-direction: column;
+        transition: width .3s ease-in-out !important;
+        /*transition only when button is clicked*/
+
+        &.opened{
+            width: 220px;
+        }
+
+
+        a{
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+            font-size: 15px;
+            border-bottom: 0px;
+            width: 100%;
+            min-width: 200px !important;
+        }
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 36px;
+            margin-left: 50px;
+            background-color: rgba(0,0,0,0);
+            outline: 0;
+            border: 0;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AboutMe from './components/aboutMe'
 import Menu from './components/menu';
 import Projects from './components/projects';
@@ -32,8 +32,8 @@ const App = () => {
     <div className={theme} id="themer">
       <div className='container'>
           <div id="content" className="hidden">
-            <AboutMe setAction={setAction}/>
             <Menu setAction={setAction} toggleTheme={toggleTheme} theme={theme}/>
+            <AboutMe setAction={setAction}/>
             <Projects setAction={setAction}/>
             <Skills />
             <Contacts />

@@ -64,3 +64,19 @@
         color: rgba($foreground-light, .8);
     }
 }
+@media only screen and (max-width: 1234px) { 
+    .light{
+        .buttons{
+            background-color: $background-light !important;
+            a:hover:not(.switcher){
+                background-color: $background-light !important;
+                color: $foreground-light !important;
+            }
+            .switcher, .switcher:hover{
+                transition-duration: .2s !important;
+                background-color: $foreground-light !important;
+                color: $background-light !important;
+            }
+        }
+    }
+}
