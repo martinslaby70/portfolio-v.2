@@ -100,3 +100,17 @@ h2{
         }
     }
 }
+@media only screen and (max-width: 925px){
+
+    .project{
+        height: auto !important;
+    }
+}
+@media only screen and (max-width: 380px){
+
+    .project{
+        min-width: 100% !important;
+        height: 100%;
+       
+    }
+}

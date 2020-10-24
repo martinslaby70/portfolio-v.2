@@ -20,7 +20,6 @@
         div{
             h2{
                 font-size: 100%;
-                width: 100%;
                 padding: 10px 0 10px 20px;
             }
             ul{
@@ -29,10 +28,47 @@
                 opacity: .8; 
             }
             width: 30%;
-            min-width: 200px;
+            min-width: 150px;
             padding: 10px;
             border-left: 1px solid ;
     
         }
     }
+}
+
+.tooltip {
+    position: relative;
+    display: block;
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 170px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 3;
+        top: 100%;
+        left: 50%;
+        margin-left: -85px;
+    }
+
+    &:hover .tooltiptext{
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 880px){
+    
+    .skills-container{
+       
+        div{
+           width: 100% !important;
+           padding: 0;
+           margin-bottom: 20px;
+        }
+    }
+    
 }
