@@ -35,7 +35,7 @@ const Cube = ({action}: props) => {
             else if (action === 'slow')
                 mesh.current.rotation.x = mesh.current.rotation.y = mesh.current.rotation.z -= 0.002; 
             else if (action === 'stop')
-                mesh.current.rotation.x = mesh.current.rotation.y = mesh.current.rotation.z; 
+                mesh.current.rotation.x = mesh.current.rotation.y = mesh.current.rotation.z;
             else
                 mesh.current.rotation.x = mesh.current.rotation.y = mesh.current.rotation.z -= 0.005; 
 

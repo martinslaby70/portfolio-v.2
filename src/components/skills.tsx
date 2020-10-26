@@ -52,7 +52,7 @@ const Skills = () => {
                         </li>
                         <li className="tooltip">NPM
                             <span className="tooltiptext">
-                                sometimes it's better to use someone else's code :)
+                                sometimes it's easier to use someone else's code :)
                             </span>
                         </li>
                     </ul>
