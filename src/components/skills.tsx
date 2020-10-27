@@ -1,8 +1,6 @@
 import React from 'react'
 import './../scss/skills.scss';
 
-import mos_word from './../imgs/certificates/mos-word.jpg'; 
-import mos_powerpoint from './../imgs/certificates/mos-powerpoint.jpg';  
 
 const Skills = () => {
 
@@ -60,8 +58,8 @@ const Skills = () => {
                 <div>
                     <h2>Others</h2>
                     <ul> 
-                        <li><a href={mos_word} target="_blank">Microsoft Word</a></li>
-                        <li><a href={mos_powerpoint} target="_blank">Microsoft PowerPoint</a></li>
+                        <li><a href="./imgs/mos-word.pdf" target="_blank">Microsoft Word</a></li>
+                        <li><a href="./imgs/mos-powerpoint.pdf" target="_blank">Microsoft PowerPoint</a></li>
                         <li className="tooltip">Cinema 4D
                             <span className="tooltiptext">
                                 3d modeling mostly for school projects

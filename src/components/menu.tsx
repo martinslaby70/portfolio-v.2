@@ -27,7 +27,7 @@ const Menu = ({setAction, toggleTheme, theme}: props) => {
                 <a href="/#projects">See my projects</a>
                 <a href="/#contact">Get in touch</a>
                 <a href="https://github.com/martinslaby70" target="_blank">Github</a>
-                <a href="/">Checkout my resume</a>            
+                <a href="./imgs/resume.pdf" target="_blank">Checkout my resume</a>            
                 <a href="" onClick={(e) => toggleTheme(e)} className="switcher">Switch to {theme === 'dark' ? 'light' : 'dark'} theme</a>
                 <p>Martin Slabý &copy; 2020{currentYear > 2020 ?  ' - ' + currentYear : null}</p>
             </div>
