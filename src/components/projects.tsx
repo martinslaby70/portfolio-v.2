@@ -25,7 +25,7 @@ const Projects = ({setAction}: props) => {
                             <li>SCSS</li>
                             <li>React-Bootstrap</li>
                         </ul>
-                        <a href="movies-drab.vercel.app" target="_blank">live demo</a>
+                        <a href="https://movies-drab.vercel.app" target="_blank">live demo</a>
                         <a href="https://github.com/martinslaby70/movies" target="_blank">code</a>
                     </div>
                     <div className="image-container">

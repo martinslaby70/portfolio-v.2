@@ -14,9 +14,9 @@ const Contacts = () => {
                 <div><FontAwesomeIcon icon={faUser} /></div>
                 <div>
                     <ul>
-                        <li><FontAwesomeIcon icon={faPhoneAlt} />  721319979</li>
-                        <li><FontAwesomeIcon icon={faEnvelope} />  martin.slaby29@seznam.cz</li>
-                        <li><FontAwesomeIcon icon={faMapMarked}/>  Czech Republic, Prague</li>
+                        <li><FontAwesomeIcon icon={faPhoneAlt} /> (+420) 721319979</li>
+                        <li><FontAwesomeIcon icon={faEnvelope} /> martin.slaby29@seznam.cz</li>
+                        <li><FontAwesomeIcon icon={faMapMarked}/> Czech Republic, Prague</li>
                     </ul>
                 </div>
             </div>
