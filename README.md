@@ -16,7 +16,7 @@ live demo hosted on vercel.com
  - Website responsivity is shown by an icon standing next to the project
    
 **Finnished**
-- [Movie App](https://github.com/martinslaby70/movies/blob/main/README.md);
+- [Movie App](https://github.com/martinslaby70/movies/blob/main/README.md)
     - React (typescript, hooks)
     - Axios
     - Sass
