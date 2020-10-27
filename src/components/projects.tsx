@@ -34,7 +34,7 @@ const Projects = ({setAction}: props) => {
                 </div>
                <div className="project">
                     <div className="unavalible" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>
-                        <h3>GraphQL project</h3>
+                        <h3>Webscraping project</h3>
                         <p className="silent">work in progress...</p>
                     </div>
                     <div className="unavalible" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>
