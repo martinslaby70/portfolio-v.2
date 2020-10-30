@@ -34,12 +34,14 @@ const Projects = ({setAction}: props) => {
                 </div>
                <div className="project">
                     <div className="unavalible" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>
-                        <h3>Webscraping project</h3>
-                        <p className="silent">work in progress...</p>
+                        <a href="https://github.com/martinslaby70/graphql" target="_blank">
+                            <h3>GraphQL &amp; Webscraping project</h3>
+                            <p className="silent">work in progress...</p>
+                        </a>
                     </div>
-                    <div className="unavalible" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>
-                        <h3>Unit Testing project</h3>
-                        <p className="silent">work in progress...</p>
+                    <div className="unavalible notAllowed" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>
+                        <h3>Unit Testing project (Jest)</h3>
+                        <p className="silent">upcoming</p>
                     </div>
                </div>
                 

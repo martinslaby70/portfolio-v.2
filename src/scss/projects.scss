@@ -80,7 +80,9 @@ h2{
             border-right: 0;
             border-radius: 0 0 0 20px;
             opacity: .3;
-            cursor: not-allowed;
+            &.notAllowed{
+                cursor: not-allowed;
+            }
             &:nth-child(1){
                 margin-bottom: 30px;
             }
@@ -94,7 +96,6 @@ h2{
                 margin-top: 0;
                 margin-left: 20px;
                 opacity: .5;
-
             }
         }
     }

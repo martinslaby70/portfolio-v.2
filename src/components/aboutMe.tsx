@@ -42,12 +42,7 @@ const AboutMe = ({setAction}: props) => {
                     <p>After elementary school, I wanted to turn my interest in games into something more productive. I was always more interested in game mechanics than the actual game content. I enjoyed finding bugs, technical glitches, and others, unintended mechanics.  These things lead me to study computer science. But alter on, I found out that game development inst for me. </p>
                     <p>But luckily I was tasked to create a website for an upcoming game that my classmates created. This small static HTML website was my first experience in web development. I truly hope I have made some progress since then :). In my opinion, when someone asks you how would you see yourself in two of five years. there isn't a good answer... I feel like I just want to be better than I was a month ago. </p>
                     
-                    <div>
-                        <img src={img1} alt="hokejista"/>
-                        <img src={img1} alt="hokejista"/>
-                        <img src={img1} alt="hokejista"/>
-                        <img src={img1} alt="hokejista"/>
-                    </div>
+                    
                     
                    
                 </div>

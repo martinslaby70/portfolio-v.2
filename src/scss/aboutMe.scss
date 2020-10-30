@@ -14,12 +14,12 @@
         margin: 0;
     }
     .continuation{
-        transition: max-height ease-in-out .3s !important;
+        transition: max-height ease-in-out 1s !important;
         overflow: hidden;
         max-height: 0;
         height: auto;
         &.expanded{               
-            max-height: 1000px;
+            max-height: 500px;
         }
         p{
             margin-top: 10px;
