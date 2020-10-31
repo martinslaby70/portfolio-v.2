@@ -167,11 +167,14 @@ background: #555;
     }  
 
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 930px){
     .buttons{
         a{
             font-size: 13px;
         }
+    }
+    .expanded{               
+        max-height: 300px !important;
     }
 }
 @media only screen and (max-width: 670px){
@@ -248,5 +251,8 @@ background: #555;
         span{
             display: none;
         }
+    }
+    .expanded{               
+        max-height: 500px !important;
     }
 }

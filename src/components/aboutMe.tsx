@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 import './../scss/aboutMe.scss';
-import img1 from './../imgs/carousel/1.jpg';
-import img2 from './../imgs/carousel/2.jpg';
+// import img1 from './../imgs/carousel/1.jpg';
+// import img2 from './../imgs/carousel/2.jpg';
 
 interface props {
     setAction: (action: string) => void 
@@ -15,10 +15,6 @@ const AboutMe = ({setAction}: props) => {
     
     const movingText = ['Developer', 'Ice hockey player', 'Student', 'Dog owner'];
     const [isExpanded, setExpand] = useState(false);
-
-    useEffect(() => {
-       
-    },[isExpanded])
 
 
     const classes = isExpanded ? 'continuation expanded' : 'continuation';
@@ -41,10 +37,6 @@ const AboutMe = ({setAction}: props) => {
                     <p>I am also a genuinely active person, from a young age, I have been playing ice hockey and it has been my hobby ever since. But I also enjoy just chatting with my friend and casually playing video games. </p>
                     <p>After elementary school, I wanted to turn my interest in games into something more productive. I was always more interested in game mechanics than the actual game content. I enjoyed finding bugs, technical glitches, and others, unintended mechanics.  These things lead me to study computer science. But alter on, I found out that game development inst for me. </p>
                     <p>But luckily I was tasked to create a website for an upcoming game that my classmates created. This small static HTML website was my first experience in web development. I truly hope I have made some progress since then :). In my opinion, when someone asks you how would you see yourself in two of five years. there isn't a good answer... I feel like I just want to be better than I was a month ago. </p>
-                    
-                    
-                    
-                   
                 </div>
                 
                 <div className="icon">
