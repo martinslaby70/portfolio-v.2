@@ -1,7 +1,8 @@
 import React from 'react'
 
 import './../scss/projects.scss';
-import image from './../imgs/previews/devices.png'
+import image_movies from './../imgs/previews/devices.png'
+import image_books from './../imgs/previews/devices-pc.png'
 
 interface props {
     setAction: (action: string) => void 
@@ -32,7 +33,7 @@ const Projects = ({setAction}: props) => {
                         <a href="https://github.com/martinslaby70/movies" target="_blank">code</a>
                     </div>
                     <div className="image-container">
-                        <img src={image} alt=""/>
+                        <img src={image_movies} alt="movies"/>
                     </div>
                 </div>
                 <div className="project">
@@ -59,7 +60,7 @@ const Projects = ({setAction}: props) => {
                         <a href="https://github.com/martinslaby70/BookList" target="_blank">code</a>
                     </div>
                     <div className="image-container">
-                        <img src={image} alt=""/>
+                        <img src={image_books} alt="books"/>
                     </div>
                 </div>
                <div className="project">
