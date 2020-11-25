@@ -42,7 +42,7 @@
     .summary>a{
         background-color: $foreground-dark ;
         color: $background-dark ;
-        &:hover{
+        &:hover:not(.unavalible){
             color: $foreground-dark ;
             background-color: $background-dark ;
         }
@@ -64,6 +64,8 @@
     button{
         color: $foreground-dark;
         background-color: $background-dark;
+
+        
     }
 }
 

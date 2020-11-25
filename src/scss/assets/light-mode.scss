@@ -42,7 +42,7 @@
     .summary>a{
         background-color: $foreground-light ;
         color: $background-light ;
-        &:hover{
+        &:hover:not(.unavalible){
             color: $foreground-light ;
             background-color: $background-light ;
         }

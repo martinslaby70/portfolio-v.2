@@ -12,11 +12,10 @@ h2{
         opacity: .8;
         position: relative;
         margin: 30px 5% 0 0;
-        width: 40%;
-        min-width: 300px;
-        height: 350px;
+        width: 35%;
+        min-width: 340px;
+        height: 380px;
         transition: all .3s ease-in-out;
-    
 
         &:hover .image-container>img{
             filter: grayscale(.3);
@@ -31,7 +30,8 @@ h2{
             border-bottom: 1px solid ;
             border-radius: 0 0 0 20px;
             padding-left: 10px;
-            width: 85%;           
+            width: 85%;   
+            height: 300px;        
             transition: ease-in-out all .3s;
             
             h3{
@@ -40,10 +40,18 @@ h2{
             ul {
                 list-style: none;
                 padding: 0;
-                
+                margin-top: 0;
                 li{
                     margin-top: 5px;
+                    h4{
+                        margin: 0;
+                    }
                 }
+            }
+            .lists{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
             }
             a{
                 display: block;
@@ -54,7 +62,16 @@ h2{
                 padding: 10px;
                 margin-bottom: 10px;
                 transition: all ease-in-out .2s;
-                border: 1px solid ;           
+                border: 1px solid ;    
+                
+                &.unavalible{
+                    opacity: .3;
+                    cursor: not-allowed;
+
+                    &:hover{
+
+                    }
+                }
             }
         }
 
@@ -62,8 +79,8 @@ h2{
             position: absolute;
             right: 0;
             bottom: 0;
-            width: 40%;
-            height: 40%;
+            width: 150px;
+            height: 150px;
             min-width: 125px;
             
             img{
@@ -104,16 +121,22 @@ h2{
         }
     }
 }
-@media only screen and (max-width: 925px){
-    .project{
-        height: 100% !important;
-    }
-}
+
 @media only screen and (max-width: 380px){
     
     .project{
         min-width: 100% !important;
         height: 100%;
-       
+        
+        .image-container{
+            height: 80px !important;
+            width: 80px !important;
+            max-width: 80px !important;
+            bottom: 80px !important;
+
+            img{
+                float: right;
+            }
+        }
     }
 }
