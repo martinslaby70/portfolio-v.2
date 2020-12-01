@@ -15,14 +15,13 @@ h2{
         width: 35%;
         min-width: 340px;
         height: 380px;
-        transition: all .3s ease-in-out;
+       
 
-        &:hover .image-container>img{
-            -webkit-filter: grayscale(10%);
-            -moz-filter: grayscale(10%);
-            filter: grayscale(10%);
+        &:hover .image-container{
+            filter: none;
         }
-        &:hover .summary, .project{
+       
+        &:hover{
             opacity: 1;
             border-color: white;
         }
@@ -80,12 +79,13 @@ h2{
             width: 150px;
             height: 150px;
             min-width: 125px;
+            filter: grayscale(100%);
+            
+            
+            transition: all .3s ease;
             
             img{
-                -webkit-filter: grayscale(80%);
-                -moz-filter: grayscale(80%);
-                filter: grayscale(80%);
-                transition: all 0.5s ease;
+                filter: blur(1px);
                 display: block;
                 height: 100%;
                 
