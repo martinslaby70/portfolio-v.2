@@ -3,6 +3,7 @@ import React from 'react'
 import './../scss/projects.scss';
 import image_movies from './../imgs/previews/devices.png'
 import image_books from './../imgs/previews/devices-pc.png'
+import image_pokedex from './../imgs/previews/devices-pokedex.png'
 
 interface props {
     setAction: (action: string) => void 
@@ -80,7 +81,7 @@ const Projects = ({setAction}: props) => {
                         <a href="https://github.com/martinslaby70/Pokedex" target="_blank">code</a>
                     </div>
                     <div className="image-container">
-                        <img src={image_movies} alt="pokedex"/>
+                        <img src={image_pokedex} alt="pokedex"/>
                     </div>
                 </div>
                <div className="project">

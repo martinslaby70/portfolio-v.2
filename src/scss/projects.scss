@@ -18,7 +18,9 @@ h2{
         transition: all .3s ease-in-out;
 
         &:hover .image-container>img{
-            filter: grayscale(.3);
+            -webkit-filter: grayscale(10%);
+            -moz-filter: grayscale(10%);
+            filter: grayscale(10%);
         }
         &:hover .summary, .project{
             opacity: 1;
@@ -80,9 +82,13 @@ h2{
             min-width: 125px;
             
             img{
+                -webkit-filter: grayscale(80%);
+                -moz-filter: grayscale(80%);
+                filter: grayscale(80%);
+                transition: all 0.5s ease;
                 display: block;
                 height: 100%;
-                filter: grayscale(100);
+                
             }
         }
 
