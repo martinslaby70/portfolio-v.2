@@ -63,13 +63,33 @@ const Projects = ({setAction}: props) => {
                         <img src={image_books} alt="books"/>
                     </div>
                 </div>
+                <div className="project">
+                    <div className="summary">
+                        <h3>Pokedex</h3>
+                        <div className="lists">
+                            <ul>
+                                <li><h4>Client</h4></li>
+                                <li>React - Typescript</li>
+                                <li>React Hooks</li>
+                                <li>Axios</li>
+                                <li>SCSS</li>
+                                <li>React-Bootstrap</li>
+                            </ul>
+                        </div>      
+                        <a href="https://pokedex-drab.vercel.app/" target="_blank">live demo</a>            
+                        <a href="https://github.com/martinslaby70/Pokedex" target="_blank">code</a>
+                    </div>
+                    <div className="image-container">
+                        <img src={image_movies} alt="pokedex"/>
+                    </div>
+                </div>
                <div className="project">
                     <div className="unavalible notAllowed" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>
                         <h3>Unit Testing project (Jest)</h3>
                         <p className="silent">upcoming</p>
                     </div>
                     <div className="unavalible notAllowed" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>
-                        <h3>Next.js 9roject</h3>
+                        <h3>Next.js Project</h3>
                         <p className="silent">upcoming</p>
                     </div>
                </div>
