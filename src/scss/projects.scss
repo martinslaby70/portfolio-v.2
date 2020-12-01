@@ -85,9 +85,10 @@ h2{
             transition: all .3s ease;
             
             img{
-                filter: blur(1px);
+                
                 display: block;
-                height: 100%;
+                width: 100%;
+                height: auto;
                 
             }
         }
