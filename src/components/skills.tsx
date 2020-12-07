@@ -8,7 +8,12 @@ const Skills = () => {
         <div className="section skills">
             <h2>What am i using</h2>
             <p>You should be able to see the technologies that I am using from my projects alone. So in this section, I will only include technologies and software that help me in web development or benefits me in any other way.</p>
-            <p>I am focusing on frontend development, but I think every frontend developer should have a tiny bit of backend experience, I have made a couple of servers (as API providers) in <span className="bold">Node.js</span> and <span className="bold">express.js</span> (<span className="silent"><a href="https://github.com/martinslaby70/calendar/blob/main/server.js" target="_blank">code example</a></span>). Also I recently started using <span className="bold">GraphQL</span> for making queries to my database (<span className="silent"><a href="https://github.com/martinslaby70/BookList/tree/main/server" target="_blank">code example</a></span>)</p>
+            <p>I am focusing on frontend development, but I think every frontend developer should have a tiny bit of backend experience, I have made a couple of servers (as API providers) in 
+                <span className="bold">Node.js</span> and <span className="bold">express.js</span> (<span className="silent"><a href="https://github.com/martinslaby70/calendar/blob/main/server.js" target="_blank" rel="noopener noreferrer">code example</a></span>). 
+                Also I recently started using 
+                <span className="bold">GraphQL</span> for making queries to my database (<span className="silent"><a href="https://github.com/martinslaby70/BookList/tree/main/server" target="_blank" rel="noopener noreferrer">code example</a></span>)
+            </p>
+            
             <div className="skills-container">
                 <div>
                     <h2>Video / Image manipulation</h2>

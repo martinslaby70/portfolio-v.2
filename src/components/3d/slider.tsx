@@ -1,5 +1,5 @@
-import React, { RefObject, useEffect, useRef, useState} from 'react'
-import {Canvas, useFrame} from 'react-three-fiber'
+import React, {useEffect, useRef} from 'react'
+import {Canvas} from 'react-three-fiber'
 
 import Cube from './cube'
 

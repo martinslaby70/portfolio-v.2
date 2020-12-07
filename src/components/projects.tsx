@@ -30,8 +30,8 @@ const Projects = ({setAction}: props) => {
                                 <li>React-Bootstrap</li>
                             </ul>
                         </div>
-                        <a href="https://movies-drab.vercel.app" target="_blank">live demo</a>
-                        <a href="https://github.com/martinslaby70/movies" target="_blank">code</a>
+                        <a href="https://movies-drab.vercel.app" target="_blank" rel="noopener noreferrer">live demo</a>
+                        <a href="https://github.com/martinslaby70/movies" target="_blank" rel="noopener noreferrer">code</a>
                     </div>
                     <div className="image-container">
                         <img src={image_movies} alt="movies"/>
@@ -58,7 +58,7 @@ const Projects = ({setAction}: props) => {
                             </ul>
                         </div>      
                         <a href="/" target="_blank" className="unavalible" onMouseEnter={() => setAction('stop')} onMouseLeave={() => setAction('')}>live demo</a>                  
-                        <a href="https://github.com/martinslaby70/BookList" target="_blank">code</a>
+                        <a href="https://github.com/martinslaby70/BookList" target="_blank" rel="noopener noreferrer">code</a>
                     </div>
                     <div className="image-container">
                         <img src={image_books} alt="books"/>
@@ -77,8 +77,8 @@ const Projects = ({setAction}: props) => {
                                 <li>React-Bootstrap</li>
                             </ul>
                         </div>      
-                        <a href="https://pokedex-drab.vercel.app/" target="_blank">live demo</a>            
-                        <a href="https://github.com/martinslaby70/Pokedex" target="_blank">code</a>
+                        <a href="https://pokedex-drab.vercel.app/" target="_blank" rel="noopener noreferrer">live demo</a>            
+                        <a href="https://github.com/martinslaby70/Pokedex" target="_blank" rel="noopener noreferrer">code</a>
                     </div>
                     <div className="image-container">
                         <img src={image_pokedex} alt="pokedex"/>
